@@ -1,0 +1,7 @@
+.vscode/
+
+**/__pycache__/
+
+autoencoder_diffuser.ckpt
+
+diffusion_checkpoints/
