@@ -93,7 +93,6 @@ python ft_class_control.py \
 ## 🧪 Sampling
 
 ### Unconditional Sampling
-
 Here is an example command for unconditional sampling after pretraining:
 ```bash
 python generate.py --num-fid-samples 50000 \
@@ -103,8 +102,17 @@ python generate.py --num-fid-samples 50000 \
 ```
 We also provide a slurm script for multi-node sampling in `scripts/slurm_scripts/job_uncond.sh`.
 
-### 
+### Tissue Classification
+Here is an example command for sampling after fine-tuning for tissue classification:
 
+```bash
+python generate_class_control.py \
+  --base-ckpt /path_to_checkpoints/checkpoints/0180000.pt \
+  --control-ckpt /path_to_ft_checkpoints/checkpoints/0005000.pt \
+  --sample-dir /path_to_output/fake_5k_a \
+  --mode sde --batch-size 8 --global-seed 0 --dataset CRC 
+```
+We also provide a slurm script for multi-node sampling in `scripts/slurm_scripts/job_gen_class.sh`.
 
 ## 📄 Citation
 
