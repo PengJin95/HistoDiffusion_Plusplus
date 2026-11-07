@@ -34,6 +34,8 @@ git clone https://github.com/PengJin95/HistoDiffusion_Plusplus
 cd HistoDiffusion_Plusplus
 pip install -r requirements.txt
 ```
+## 📦 Model
+The model checkpoints are currently available on [Google Drive](https://drive.google.com/drive/folders/1gurYrgCn_lPB7mGmu3GPBI8FRJ21BFTt?usp=sharing). We also plan to upload the checkpoints to Hugging Face.
 
 ## 📂 Dataset Preparation
 We pretrain HistoDiffusion on Histo-7M. The WSIs are extracted from TCGA, CPTAC and PAIP. The data prerparation scripts and instructions can be found in `scripts/data_preparation`.
